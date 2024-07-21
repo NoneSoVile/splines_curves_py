@@ -50,12 +50,12 @@ plt.xlabel('x')
 plt.ylabel('y')
 plt.legend()
 plt.grid(True)
-plt.show()
+#plt.show()
 
 # Now vary the weights and plot the changes
 weights_list = [
     [1, 1, 1, 1, 1],            # Equal weights
-    [1, 2, 1, 2, 1],            # Different weights
+    [1, 2, 13, 2, 1],            # Different weights
     [1, 0.5, 2, 0.5, 1],        # Different weights (emphasizing middle points)
     [2, 1, 1, 1, 2],            # Weights skewed towards end points
 ]
