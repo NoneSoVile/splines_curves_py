@@ -27,7 +27,7 @@ num_points = 100
 
 # Generate the B-spline curve
 curve = bspline(control_points, degree, num_points)
-
+print(curve)
 # Plot the control points and the B-spline curve
 plt.figure()
 plt.plot(control_points[:, 0], control_points[:, 1], 'o', label='Control Points')

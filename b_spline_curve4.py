@@ -11,7 +11,7 @@ def bspline_basis(i, k, t, knots):
     knots: knot vector
     """
     if k == 0:
-        return 1.0 if knots[i] <= t < knots[i+1] else 0.0
+        return 1.0 if knots[i] <= t <= knots[i+1] else 0.0
     
     if knots[i+k] == knots[i]:
         c1 = 0.0
@@ -53,7 +53,7 @@ control_points = [(0, 0), (1, 4), (2, 0), (3, 4), (4, 0)]
 degree = 3
 
 curve_points = bspline_curve(control_points, degree)
-
+print(curve_points)
 # Plotting
 plt.figure(figsize=(10, 6))
 control_points = np.array(control_points)

@@ -26,7 +26,7 @@ P = np.array([
 ])
 
 # Degree
-p = 3
+p = 4
 
 # Knot vector
 U = [0, 0, 0, 0, 1, 2, 3, 4, 4, 4, 4]
