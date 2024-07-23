@@ -15,16 +15,23 @@ def b_spline_basis(i, k, t, knots):
 control_points = np.array([
     [0.0, 0.0],
     [1.0, 2.0],
+    [2.0, 5.0],
     [3.0, 3.0],
     [4.0, 0.0],
-    [5.0, 2.0]
+    [5.0, 2.0],
+    [6.0, 4.0],
+    [7.0, 14.0],
+    [8.0, 9.0],
+    [9.0, 7.0],
+
+
 ])
 
 # Degree of the B-spline curve
-degree = 3
+degree = 4
 
 # Define the non-uniform knot vector
-knot_vector = [0, 0, 0, 0, 0.5,  1, 1, 1, 1]
+knot_vector = [0, 0, 0, 0, 0,  0.5,0.6,0.7, 0.7,0.7, 1, 1, 1, 1, 1]
 
 # Generate points on the B-spline curve
 t_values = np.linspace(0, 1, 100)  # t should be within the range of the knot vector without reaching the last knot
